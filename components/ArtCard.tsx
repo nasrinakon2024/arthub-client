@@ -3,9 +3,10 @@ import React from 'react';
 interface ArtCardProps {
   title: string;
   artist: string;
-  price: number; // প্রাইস নাম্বার হিসেবে রাখা ভালো (ক্যালকুলেশনের সুবিধার জন্য)
+  price: number;
   image: string;
-  onBuyNow: () => void; // নাম পরিবর্তন করা হলো
+  onAddToCart: () => void;
+  onBuyNow: () => void; // এই লাইনটি যোগ করো
 }
 
 const ArtCard: React.FC<ArtCardProps> = ({ title, artist, price, image, onBuyNow }) => {

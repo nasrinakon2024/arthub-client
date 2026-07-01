@@ -28,7 +28,7 @@ export default function Browse() {
     { title: "Desert Sunset", artist: "Rahim Khan", price: 180, image: "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?q=80&w=400" },
     { title: "Ocean Harmony", artist: "Fatima Akter", price: 220, image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=400" },
     { title: "Forest Whisper", artist: "David Chen", price: 190, image: "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=400" },
-    { title: "City Lights", artist: "Sofia Lopez", price: 140, image: "https://images.unsplash.com/photo-1519501025264-65ba15a8c390?q=80&w=400" },
+    
   ];
 
   return (
@@ -49,15 +49,13 @@ export default function Browse() {
           {artworks.map((art, index) => (
             <Link href={`/artwork/${index + 1}`} key={index}>
               <ArtCard 
-                title={art.title} 
-                artist={art.artist} 
-                price={art.price} 
-                image={art.image} 
-                onBuyNow={() => {
-                  // এখানে e.preventDefault() সরানো হয়েছে যাতে TypeScript এরর না দেয়
-                  addToCart(art);
-                }} 
-              />
+  title={art.title}
+  artist={art.artist}
+  price={art.price}
+  image={art.image}           // এই লাইনটি যোগ করো
+  onAddToCart={() => console.log("Added")}
+  onBuyNow={() => console.log("Buying")} // এই লাইনটি যোগ করো
+/>
             </Link>
           ))}
         </div>
