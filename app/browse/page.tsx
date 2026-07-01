@@ -64,3 +64,4 @@ export default function Browse() {
       </main>
     </div>
   ); 
+  }
