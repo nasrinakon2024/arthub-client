@@ -55,7 +55,7 @@ export default function Home() {
             <ArtCard 
               title="Colorful Abstract" 
               artist="Jisan Ahmed" 
-              price="$150" 
+              price={150}
               image="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=400" 
               onAddToCart={() => addToCart({ title: "Colorful Abstract", artist: "Jisan Ahmed", price: "$150", image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=400" })}
             />
@@ -63,7 +63,7 @@ export default function Home() {
             <ArtCard 
               title="Mountain Breeze" 
               artist="Nasrin Naina" 
-              price="$200" 
+              price={250}
               image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=400" 
               onAddToCart={() => addToCart({ title: "Mountain Breeze", artist: "Nasrin Naina", price: "$200", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=400" })}
             />
@@ -71,7 +71,7 @@ export default function Home() {
             <ArtCard 
               title="Urban Dreams" 
               artist="Anonymous" 
-              price="$120" 
+              price={350} 
               image="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=400" 
               onAddToCart={() => addToCart({ title: "Urban Dreams", artist: "Anonymous", price: "$120", image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=400" })}
             />
